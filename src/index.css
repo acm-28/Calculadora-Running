@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:ital,wght@0,400;0,500;0,700;0,900;1,900&family=JetBrains+Mono:wght@300;400;500;700;800&display=swap');
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-neon-lime: #CCFF00; /* Custom fluorescent Nike-style Volt green */
+  --color-crimson-x: #FF2A54; /* Racing red / target line accent */
+  --color-foam-cream: #EAE8E3; /* Clean off-white blueprint style */
+  --color-carbon: #0C0D0F; /* Ultra deep asphalt dark */
+}
+
+/* Base style resets */
+body {
+  background-color: #08090a;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    #08090a,
+    #08090a 10px,
+    #0e0f12 10px,
+    #0e0f12 20px
+  );
+}
+
+/* Smooth custom scrollbar for splits and event timelines */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-neon-lime);
+}
+
+/* Eliminate arrows in numeric inputs */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+

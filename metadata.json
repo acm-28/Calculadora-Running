@@ -1,0 +1,6 @@
+{
+  "name": "Kinetic Performance Lab",
+  "description": "High-fidelity biometric running calculator, custom carbon-plate split strategy visualizer, and tactical fuel planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
